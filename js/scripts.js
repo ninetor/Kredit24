@@ -412,8 +412,8 @@ function popUp(type, media){
     var popup = $('.popup#' + type),
         popup_body = popup.find('article');
     document_scroll = $(window).scrollTop();
-    $('html,body').stop().animate( {'scrollTop':0 }, 200);
     if( type == 'video' ) {popup_body.find('iframe').replaceWith( '<iframe width="640" height="480" src="' + media + '" allowfullscreen="" frameborder="0"></iframe>' );}
+/* !!!!!   ДЕМОНСТРАТИВНАЯ ФУНКЦИЯ ДЛЯ ПОПАПА ОБРАБОТКИ ЗАКАЗА    !!!!! */    if( type == 'in-progress' ) setTimeout(closePopUp, 3000);   /* !!!!!   УДАЛИТЬ    !!!!! */
     popup.css({
         'opacity': 0,
         'display': 'block'
@@ -435,6 +435,7 @@ function popUp(type, media){
     });
     popupControlHeight();
     return false;
+    
 }
 function closePopUp(){
     var popup = $('.popup.active');
@@ -447,8 +448,11 @@ function closePopUp(){
         $(document).unbind('click.myEvent');
     });
     $('.mask_popup').fadeOut(250);
-    $('html,body').stop().animate( {'scrollTop': document_scroll }, 200);
+    if( document_scroll > 0 ) $('html,body').scrollTop(document_scroll);
     return false;
+    
+    
+    
 }
 function changePopUp(type){
     var popup = $('.popup.active');
@@ -466,24 +470,30 @@ function changePopUp(type){
 function popupControlHeight(){
     var popup = $('.popup.active'),
         window_height = $(window).height();
+    var popup = $('.popup.active'),
+        window_height = $(window).height();
+    $('body').addClass('freeze');
+    $('body > *:not(.mask_popup, .popup)').each(function() {
+        var block = $(this);
+        if (!(block.css('position') == 'absolute') && !(block.css('position') == 'fixed')) {
+            var top = (block.offset().top - document_scroll),
+                    left = block.offset().left;
+            block.css({'top': top, 'left': left});
+            setTimeout(function() {
+                block.addClass('fixed-block');
+            }, 250);
+        }
+    });
     if( popup.height() > window_height ){
         popup.addClass('popup-absolute');
-        $('body > *:not(.mask_popup, .popup)').each(function(){
-            var block = $(this);
-            if( !(block.css('position') == 'absolute') && !(block.css('position') == 'fixed') ){
-                var top = block.offset().top,
-                    left = block.offset().left;
-                block.css({'top':top, 'left':left});
-                setTimeout(function(){ block.addClass('fixed-block'); }, 250);
-            }
-        });
     }else if( popup.hasClass('popup-absolute') ){
-        popupControlHeight_Clear();
+        popup.removeClass('popup-absolute');
     }
 }
 function popupControlHeight_Clear(){
     var popup = $('.popup.active');
     popup.removeClass('popup-absolute');
+    $('body').removeClass('freeze');
     $('body > *.fixed-block').each(function() {
         var block = $(this);
         block.css({'top': '', 'left': ''});
@@ -502,7 +512,7 @@ jQuery(function ($) {
         }
         return false;
     });
-    $('.close-popup, .popup .close').bind('click', function(){
+    $('.close-popup, .popup .close, .popup-close').bind('click', function(){
         closePopUp();
         return false;
     });

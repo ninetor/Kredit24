@@ -765,25 +765,48 @@ ol li:before {content:counter(li); counter-increment:li; display: inline-block; 
 
 .hidden{display: none;}
 
+/* Thanks messages */
+#in-progress article{background: #f4f4f7; padding: 15px 30px 15px 120px; width: 630px; text-align: left;}
+#in-progress article .loader{display: block; float: left; margin: 22px 0 0 -80px;}
+#in-progress article p{font-size: 16px; line-height: 24px; color: #697382; margin: 7px 0;}
+#in-progress article p.title{font: normal 44px/40px 'Play'; margin: 13px 0 18px;}
+/* Thanks messages END */
 
+/* Fixed popup-scroll */
+.fixed-block{position: fixed;}
+body.freeze{overflow-y: scroll;}
+.center {padding-bottom: 1px; padding-top: 1px;}
+.center.calculate.fixed-block{margin-top: 0;}
+/* Fixed popup-scroll END */
 
+/* Thank's pages */
+.thanks-page{padding: 18px 35px 60px;}
+.thanks{background: #f4f4f7 url("../img/thanks-illustration.png") no-repeat right 35px center; margin: 0 -35px 33px;; padding: 16px 35px 20px; border-radius: 3px; box-shadow: 0 2px 3px rgba(0,0,0,.25); }
+.thanks.negative{background: #f4f4f7 url("../img/thanks-illustration_bad.png") no-repeat right 35px center;}
+.thanks.ups{margin: 60px -35px; padding: 46px 35px 30px;}
+.thanks > *, .thanks-page > p{max-width: 630px;}
+.thanks.negative > *{max-width: 645px;}
+.thanks-page.negative > p{max-width: 670px;}
+.thanks p, .thanks-page .thanks p{color: #697382; font: normal 24px/28px 'Play'; margin: 14px 0;}
+.thanks.ups p, .thanks-page .thanks.ups p{margin: 25px 0;}
+.thanks p.title, .thanks-page .thanks p.title{font: normal 44px/40px 'Play';  margin: 14px 0 21px;}
+.thanks-page p{color: #697382; font-size: 14px; line-height: 20px; margin: 15px 0;}
+.thanks-page p.big{font: normal 24px/24px 'Play'; margin: 17px 0;}
+.thanks-page p strong{font-weight: bold;}
+.thanks-page .button.green{width: auto; font-size: 12px; margin: 10px 0; padding: 8px 20px; color: #fff; text-decoration: none;}
+.thanks-page .button.green:active{margin: 12px 0 8px;}
+.thanks-page ol{max-width: 600px;}
+.thanks-page.negative ol{max-width: 670px;}
+.thanks-page li{color: #697382; font-size: 14px; line-height: 20px; padding-left: 75px;}
+.thanks-page li:before{display: block; width: 26px; height: 26px; background: #83d03c; border-radius: 50%; text-align: center; color: #fff; font: normal 21px/26px 'Play'; margin-left: -45px; margin-top: -3px;}
+.thanks-page a{color: #80c41c; text-decoration: underline;}
+.thanks-page a:hover{text-decoration: none;}
+/* Thank's pages END */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Index - popup take money */
+#for-money article{background: #f4f4f7; padding: 15px 30px 15px; width: 630px; text-align: left;}
+#for-money article p{font-size: 16px; line-height: 24px; color: #697382; margin: 15px 0;}
+#for-money article p.title{font: normal 44px/40px 'Play'; margin: 13px 0 18px;}
+#for-money article .button{font: normal 18px/18px 'Play'; width: auto; padding: 8px 20px; height: 18px; margin: 10px 20px 5px 0; box-shadow: none; border: none;}
+#for-money article .button:active{margin: 12px 20px 3px 0;}
+/* Index - popup take money END */
