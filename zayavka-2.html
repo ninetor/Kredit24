@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="inner-page">
+    <head>
+        <title>Кредит 24</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.css">
+	<link rel="stylesheet" href="css/chosen.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css"><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css"><![endif]-->
+        
+        <!--[if IE]>
+            <script>
+                    document.createElement('header');
+                    document.createElement('nav');
+                    document.createElement('section');
+                    document.createElement('article');
+                    document.createElement('aside');
+                    document.createElement('footer');
+            </script>
+        <![endif]-->
+	<script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/chosen.jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+        
+    </head>
+    <body>
+        <!--[if lte IE 8]><p class="chromeframe">Ваш браузер <em>устарел!</em> <a href="http://browsehappy.com/">Установите современный браузер</a>.</p><![endif]-->
+        <header>
+            <div class="center">
+                <section class="languages">
+                    <a href="#" class="active">Ru <i class="flag ru"></i></a>
+                    &nbsp;
+                    <a href="#">Kz <i class="flag kz"></i></a>
+                </section>
+                <div class="user-login">
+                    <a href="#" class="user">Володарский аркадий</a>
+                    <span class="separator"></span>
+                    <a href="#" class="logout">Выход</a>
+                </div>
+                <a href="index.html" id="logo"></a>
+                <section class="contacts">
+                    <span>Наш контакт-центр</span>
+                    <strong>8 800 0000-00-0</strong>
+                     с 9:00 до 20:00 (без выходных)
+                </section>
+            </div>
+        </header>
+        
+        <div class="center">
+            <section>
+                <h1 class="align-center">Заявка на займ</h1>
+                <div class="query-hronometr">
+                    <section class="complete">
+                        <p>1. Выберите сумму и срок займа</p>
+                        <div>
+                            <span></span>
+                            <i></i>
+                        </div>
+                    </section><!--
+                    --><section class="complete">
+                        <p>2. Заполните анкету</p>
+                        <div>
+                            <span></span>
+                            <i></i>
+                        </div>
+                    </section><!--
+                    --><section class="active">
+                        <p>3. Подпишите договор</p>
+                        <div>
+                            <span></span>
+                            <i></i>
+                        </div>
+                    </section><!--
+                    --><section class="last-point">
+                        <p>4. Получите деньги</p>
+                        <div>
+                            <span></span>
+                        </div>
+                    </section>
+                </div>
+                
+                <div class="query-control">
+                    <h2 class="align-center">Проверьте условия займа</h2>
+                    <div class="calculate center">
+                        <div class="range-line" id="money">
+                            <label>Мне нужно</label>
+                            <div class="range-wrapper">
+                                <a href="#" class="minus"></a>
+                                <a href="#" class="plus"></a>
+                                <span class="min-value">5 000</span>
+                                <span class="max-value">30 000</span>
+                                <strong class="attention" id="max_attention">Сумма более <em class="max-cash">15000</em> тенге доступна только со второго займа</strong>
+                                <section class="range-body">
+                                    <i class="value"><span>10 000</span></i>
+                                    <div class="range"></div>
+                                </section>
+                            </div>
+                            <input type="text" value="10 000" />
+                            <em><span class="tenge">T</span></em>
+                        </div>
+                        <div class="range-line" id="period">
+                            <label>На срок</label>
+                            <div class="range-wrapper">
+                                <a href="#" class="minus"></a>
+                                <a href="#" class="plus"></a>
+                                <span class="min-value">5</span>
+                                <span class="max-value">30</span>
+                                <section class="range-body">
+                                    <i class="value"><span>10</span></i>
+                                    <div class="range"></div>
+                                </section>
+                            </div>
+                            <input type="text" value="10" />
+                            <em>дней</em>
+                        </div>
+                        <form>
+                            <section id="take">
+                                <label>Вы берете <span class="arrow"></span></label>
+                                <strong>10 000</strong>
+                                <div><span class="tenge">T</span></div>
+                            </section>
+                            <section id="term">
+                                <label>До (включительно) <span class="arrow"></span></label>
+                                <strong>29</strong>
+                                <div>Октября, 2013 <br />Вторник</div>
+                            </section>
+                            <section id="return">
+                                <label>Возвращаете <span class="arrow"></span></label>
+                                <strong>12 160</strong>
+                                <div><span class="tenge">T</span></div>
+                            </section>
+                            <div class="credit-goal">
+                                Цель получения займа:
+                                <div class="choosen-wrapper">
+                                    <select class="choosen">
+                                        <option>Выбрать</option>
+                                        <option value="val1">Приобретение автомобиля</option>
+                                        <option value="val2">Приобретение жилья</option>
+                                        <option value="val3">Развитие бизнеса</option>
+                                    </select>
+                                </div>
+                                <span class="not-complete">Необходимо указать</span>
+                            </div>
+                        </form>
+                        <div class="contract_deferral">
+                            <p class="title">Оферта на предоставление займа</p>
+                            <p class="align-right">Генеральному директору </p>
+                            <p>Настоящий Договор — настоящий документ, составленный в виде публичной оферты, т. е. предложения для неопределенного круга лиц заключить договор на указанных в предложении условиях путем его акцепта и содержащего все существенные условия договора об установлении, изменении или прекращении гражданских прав и обязанностей Сторон, а также все приложения, изменения и Смысл игры под названием ULTIMEYES в том, чтобы найти и выбрать на экране компьютера вспыхивающие и исчезающие визуальные модели, которые становятся все более тусклыми. Цель разработанной программы – натренировать мозг лучше реагировать на информацию, получаемую от глаз.</p>
+                            <p>Настоящий Договор — настоящий документ, составленный в виде публичной оферты, т. е. предложения для неопределенного круга лиц заключить договор на указанных в предложении условиях путем его акцепта и содержащего все существенные условия договора об установлении, изменении или прекращении гражданских прав и обязанностей Сторон, а также все приложения, изменения и Смысл игры под названием ULTIMEYES в том, чтобы найти и выбрать на экране компьютера вспыхивающие и исчезающие визуальные модели, которые становятся все более тусклыми. Цель разработанной программы – натренировать мозг лучше реагировать на информацию, получаемую от глаз.</p>
+                            <p>Настоящий Договор — настоящий документ, составленный в виде публичной оферты, т. е. предложения для неопределенного круга лиц заключить договор на указанных в предложении условиях путем его акцепта и содержащего все существенные условия договора об установлении, изменении или прекращении гражданских прав и обязанностей Сторон, а также все приложения, изменения и Смысл игры под названием ULTIMEYES в том, чтобы найти и выбрать на экране компьютера вспыхивающие и исчезающие визуальные модели, которые становятся все более тусклыми. Цель разработанной программы – натренировать мозг лучше реагировать на информацию, получаемую от глаз.</p>
+                        </div>
+                        <div class="deferral-submit">
+                            <p>
+                                <input type="checkbox" value="confirm" id="confirm" /><label for="confirm">Я согласен с предоставлением моих данных в <a href="#">ПКБ и ГЦВП</a></label>
+                            </p>
+                            <div class="separator"></div>
+                            <input type="button" value="Подтвердить договор" class="button green" />
+                        </div>
+                    </div>
+                    
+                    <div class="standart-form">
+                        <a href="#" class="step-back"><span>Назад</span></a>
+                        <a href="#" class="button orange disabled">Дальше <img src="img/arrow-down.png" alt="" /></a>
+                        <i class="security-info">
+                            <img src="img/thawte2.png" alt="thawte" />Ваши данные надежно защищены
+                        </i>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                
+                
+                
+                
+            </section>
+            
+            
+        </div>
+        
+        
+        
+    </body>
+</html>

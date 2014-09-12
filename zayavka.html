@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html class="inner-page">
+    <head>
+        <title>Кредит 24</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.css">
+	<link rel="stylesheet" href="css/chosen.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css"><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css"><![endif]-->
+        
+        <!--[if IE]>
+            <script>
+                    document.createElement('header');
+                    document.createElement('nav');
+                    document.createElement('section');
+                    document.createElement('article');
+                    document.createElement('aside');
+                    document.createElement('footer');
+            </script>
+        <![endif]-->
+	<script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/chosen.jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+        
+    </head>
+    <body>
+        <!--[if lte IE 8]><p class="chromeframe">Ваш браузер <em>устарел!</em> <a href="http://browsehappy.com/">Установите современный браузер</a>.</p><![endif]-->
+        <header>
+            <div class="center">
+                <section class="languages">
+                    <a href="#" class="active">Ru <i class="flag ru"></i></a>
+                    &nbsp;
+                    <a href="#">Kz <i class="flag kz"></i></a>
+                </section>
+                <div class="user-login">
+                    <a href="#" class="user">Володарский аркадий</a>
+                    <span class="separator"></span>
+                    <a href="#" class="logout">Выход</a>
+                </div>
+                <a href="index.html" id="logo"></a>
+                <section class="contacts">
+                    <span>Наш контакт-центр</span>
+                    <strong>8 800 0000-00-0</strong>
+                     с 9:00 до 20:00 (без выходных)
+                </section>
+            </div>
+        </header>
+        
+        <div class="center">
+            <section>
+                <h1 class="align-center">Заявка на займ</h1>
+                <div class="query-hronometr">
+                    <section class="complete">
+                        <p>1. Выберите сумму и срок займа</p>
+                        <div>
+                            <span></span>
+                            <i></i>
+                        </div>
+                    </section><!--
+                    --><section class="active">
+                        <p>2. Заполните анкету</p>
+                        <div>
+                            <span></span>
+                            <i></i>
+                        </div>
+                    </section><!--
+                    --><section>
+                        <p>3. Подпишите договор</p>
+                        <div>
+                            <span></span>
+                            <i></i>
+                        </div>
+                    </section><!--
+                    --><section class="last-point">
+                        <p>4. Получите деньги</p>
+                        <div>
+                            <span></span>
+                        </div>
+                    </section>
+                </div>
+                
+                <div class="js-accordion query-steps active">
+                    <a href="#" class="js-accordion_head active"><i class="ico-1"></i><span>Контактная информация</span></a>
+                    <div class="js-accordion_body">
+                        <form class="standart-form">
+                            <div>
+                                <label>
+                                    <em title="На номер мы вышлем SMS с кодом">?</em>
+                                    Мобильный телефон:
+                                </label>
+                                <input type="text" value="" class="phone-number" />
+                                <input type="button" class="green standart" value="Подтвердить номер" />
+                            </div>
+                            <div>
+                                <label>
+                                    <em title="">?</em>
+                                    Домашний телефон:
+                                </label>
+                                <input type="text" value="" />
+                            </div>
+                            <div>
+                                <label>
+                                    <em title="">?</em>
+                                    Электронная почта:
+                                </label>
+                                <input type="text" value="" />
+                                <input type="button" class="green standart" disabled="disabled" value="Подтвердить номер" />
+                            </div>
+                            <div>
+                                <label>
+                                    <em title="">?</em>
+                                    Придумайте секретное слово:
+                                </label>
+                                <input type="text" value="" />
+                                <div class="separator"></div>
+                                <input type="checkbox" value="check1" id="check1" />
+                                <label for="check1">Я принимаю <a href="#">Правила предоставления займов ТОО «Кредит24»</a>. </label>
+                            </div>
+                            <div>
+                                <input type="checkbox" value="check2" id="check2" />
+                                <label for="check2">Я ознакомлен(а) и принимаю <a href="#">политику кофиденциальности</a> сервиса</label>
+                            </div>
+                            <div class="separator"></div>
+                            <div>
+                                <a href="#" class="button orange disabled">Дальше <img src="img/arrow-down.png" alt="" /></a>
+                                <i class="security-info">
+                                    <img src="img/thawte2.png" alt="thawte" />
+                                    Ваши данные надежно защищены
+                                </i>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="js-accordion query-steps">
+                    <a href="#" class="js-accordion_head"><i class="ico-2"></i><span>Паспортные данные</span></a>
+                    <div class="js-accordion_body">
+                        <form class="standart-form width-2">
+                            <div>
+                                <label>
+                                    <em title="">?</em>
+                                    Номер и серия паспорта:
+                                </label>
+                                <input type="text" value="MP2123141" />
+                                <em class="ok"></em>
+                            </div>
+                            <div>
+                                <label>
+                                    <em title="">?</em>
+                                    Кем выдан:
+                                </label>
+                                <div class="choosen-wrapper">
+                                    <select class="choosen">
+                                        <option value="val1">Центральное РУВД</option>
+                                        <option value="val2">Заводское РУВД</option>
+                                        <option value="val3">Фрунзенское РУВД</option>
+                                        <option value="val4">Московское РУВД</option>
+                                        <option value="val5">Ленинское РУВД</option>
+                                    </select>
+                                </div>
+                                <em class="ok"></em>
+                            </div>
+                            <div>
+                                <label>
+                                    <em title="">?</em>
+                                    Паспорт действителен до:
+                                </label>
+                                <div class="datepicker-wrapper"><input type="text" value="" class="datepicker" /><i class="datepicker-ico"></i></div>
+                                <em class="ok"></em>
+                            </div>
+                            <div>
+                                <label>
+                                    <em title="">?</em>
+                                    Дата рождения:
+                                </label>
+                                <div class="choosen-wrapper birthday-date">
+                                    <select class="choosen">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                        <option>17</option>
+                                        <option>18</option>
+                                        <option>19</option>
+                                        <option>20</option>
+                                        <option>21</option>
+                                        <option>22</option>
+                                        <option>23</option>
+                                        <option>24</option>
+                                        <option>25</option>
+                                        <option>26</option>
+                                        <option>27</option>
+                                        <option>28</option>
+                                        <option>29</option>
+                                        <option>30</option>
+                                        <option>31</option>
+                                    </select>
+                                </div>
+                                <div class="choosen-wrapper birthday-month">
+                                    <select class="choosen">
+                                        <option>Января</option>
+                                        <option>Февраля</option>
+                                        <option>Марта</option>
+                                        <option>Апреля</option>
+                                        <option>Мая</option>
+                                        <option>Июня</option>
+                                        <option>Июля</option>
+                                        <option>Августа</option>
+                                        <option>Сентября</option>
+                                        <option>Октября</option>
+                                        <option>Ноября</option>
+                                        <option>Декабря</option>
+                                    </select>
+                                </div>
+                                <div class="choosen-wrapper birthday-year">
+                                    <select class="choosen">
+                                        <option>1980</option>
+                                        <option>1981</option>
+                                        <option>1982</option>
+                                        <option>1983</option>
+                                        <option>1984</option>
+                                        <option>1985</option>
+                                        <option>1986</option>
+                                        <option>1987</option>
+                                        <option>1988</option>
+                                        <option>1989</option>
+                                        <option>1990</option>
+                                        <option>1991</option>
+                                        <option>1992</option>
+                                        <option>1993</option>
+                                        <option>1994</option>
+                                        <option>1995</option>
+                                        <option>1996</option>
+                                        <option>1997</option>
+                                        <option>1998</option>
+                                        <option>1999</option>
+                                    </select>
+                                </div>
+                                <em class="ok"></em>
+                            </div>
+                            <div class="separator"></div>
+                            <div>
+                                <a href="#" class="button orange">Дальше <img src="img/arrow-down.png" alt="" /></a>
+                                <i class="security-info">
+                                    <img src="img/thawte2.png" alt="thawte" />
+                                    Ваши данные надежно защищены
+                                </i>
+                                <p><a href="#" class="step-back"><span>Назад</span></a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="js-accordion query-steps">
+                    <a href="#" class="js-accordion_head"><i class="ico-3"></i><span>Фактический адрес проживания</span></a>
+                    <div class="js-accordion_body">
+                        Макета с данными для этого блока нет
+                    </div>
+                </div>
+                <div class="js-accordion query-steps">
+                    <a href="#" class="js-accordion_head"><i class="ico-4"></i><span>Занятость и доходы</span></a>
+                    <div class="js-accordion_body">
+                        <form class="standart-form width-2">
+                            <div>
+                                <label>
+                                    <em title="">?</em>
+                                    Тип занятости:
+                                </label>
+                                <div class="choosen-wrapper">
+                                    <select class="choosen">
+                                        <option value="val1">Полная занятость</option>
+                                        <option value="val2">Частичная занятость</option>
+                                        <option value="val3">Сезонная работа</option>
+                                    </select>
+                                </div>
+                                <em class="ok"></em>
+                            </div>
+                            <div>
+                                <label>
+                                    <em title="">?</em>
+                                    Наименование работодателя:
+                                </label>
+                                <div class="choosen-wrapper">
+                                    <select class="choosen">
+                                        <option value="val1">Частное предприятие</option>
+                                        <option value="val2">Государственное предприятие</option>
+                                    </select>
+                                </div>
+                                <em class="ok"></em>
+                            </div>
+                            <div>
+                                <label>
+                                    <em title="">?</em>
+                                    Должность:
+                                </label>
+                                <input type="text" value="Дизайнер ЭВМ"  />
+                                <em class="ok"></em>
+                            </div>
+                            <div>
+                                <label>
+                                    <em title="">?</em>
+                                    Ежемесячный доход:
+                                </label>
+                                <input type="text" value="300 000" style="width: 87px;" /> <span class="tenge">T</span>
+                                <em class="ok"></em>
+                            </div>
+                            <div>
+                                <label>
+                                    <em title="">?</em>
+                                    Другие кредиты:
+                                </label>
+                                <div class="choosen-wrapper">
+                                    <select class="choosen">
+                                        <option value="val1">Нет</option>
+                                        <option value="val2">Есть</option>
+                                    </select>
+                                </div>
+                                <em class="ok"></em>
+                            </div>
+                            <div class="separator"></div>
+                            <div>
+                                <a href="#" class="button orange">Дальше <img src="img/arrow-down.png" alt="" /></a>
+                                <i class="security-info">
+                                    <img src="img/thawte2.png" alt="thawte" />
+                                    Ваши данные надежно защищены
+                                </i>
+                                <p><a href="#" class="step-back"><span>Назад</span></a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="js-accordion query-steps">
+                    <a href="#" class="js-accordion_head"><i class="ico-5"></i><span>Ваша персональная скидка</span></a>
+                    <div class="js-accordion_body">
+                        <form class="standart-form width-2">
+                            <div>
+                                <label>
+                                    <em title="">?</em>
+                                    Номер скидки:
+                                </label>
+                                <input type="text" value=""  />
+                            </div>
+                            
+                            <div class="separator"></div>
+                            <div>
+                                <a href="#" class="button orange">Дальше <img src="img/arrow-down.png" alt="" /></a>
+                                <i class="security-info">
+                                    <img src="img/thawte2.png" alt="thawte" />
+                                    Ваши данные надежно защищены
+                                </i>
+                                <p><a href="#" class="step-back"><span>Назад</span></a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                
+                
+                
+            </section>
+            
+            
+        </div>
+        
+        
+        
+    </body>
+</html>

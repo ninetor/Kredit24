@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html class="inner-page">
+    <head>
+        <title>Кредит 24</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.css">
+	<link rel="stylesheet" href="css/styles.css">
+        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css"><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css"><![endif]-->
+        
+        <!--[if IE]>
+            <script>
+                    document.createElement('header');
+                    document.createElement('nav');
+                    document.createElement('section');
+                    document.createElement('article');
+                    document.createElement('aside');
+                    document.createElement('footer');
+            </script>
+        <![endif]-->
+	<script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/scripts.js"></script>
+        
+    </head>
+    <body>
+        <!--[if lte IE 8]><p class="chromeframe">Ваш браузер <em>устарел!</em> <a href="http://browsehappy.com/">Установите современный браузер</a>.</p><![endif]-->
+        <header>
+            <div class="center">
+                <section class="languages">
+                    <a href="#" class="active">Ru <i class="flag ru"></i></a>
+                    &nbsp;
+                    <a href="#">Kz <i class="flag kz"></i></a>
+                </section>
+                <div class="user-login">
+                    <a href="#" class="user">Володарский аркадий</a>
+                    <span class="separator"></span>
+                    <a href="#" class="logout">Выход</a>
+                </div>
+                <a href="index.html" id="logo"></a>
+                <section class="contacts">
+                    <span>Наш контакт-центр</span>
+                    <strong>8 800 0000-00-0</strong>
+                     с 9:00 до 20:00 (без выходных)
+                </section>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#" class="home"><i></i></a></li>
+                <li><a href="#"><span>Как это работает</span></a></li>
+                <li><a href="#"><span>Как получить деньги</span></a></li>
+                <li><a href="#"><span>Как вернуть деньги</span></a></li>
+                <li><a href="#" class="help"><i></i><span>Помощь</span></a>
+                    <menu>
+                        <span></span>
+                        <ul>
+                            <li><a href="#">Вопрос - ответ</a></li>
+                            <li><a href="#">Обратная связь</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Соглашение</a></li>
+                        </ul>
+                    </menu>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="center">
+            <div class="crumbs">
+                <a href="#">Главная</a>
+                <i><img src="img/crumbs-arrow.png" alt=">" /></i>
+                <span>Личный кабинет</span>
+            </div>
+            <aside>
+                <h2>Получить деньги</h2>
+                <div class="calculate calculate-small">
+                    <div class="range-line" id="money">
+                        <div>
+                            <label>Сумма:</label>
+                            <input type="text" value="10 000" />
+                            <em><span class="tenge">T</span></em>
+                        </div>
+                        <div class="range-wrapper">
+                            <span class="min-value">5 000</span>
+                            <span class="max-value">30 000</span>
+                            <section class="range-body">
+                                <i class="value"><span>10 000</span></i>
+                                <div class="range"></div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="range-line" id="period">
+                        <div>
+                            <label>Срок:</label>
+                            <input type="text" value="10" />
+                            <em>дней</em>
+                        </div>
+                        <div class="range-wrapper">
+                            <span class="min-value">5</span>
+                            <span class="max-value">30</span>
+                            <section class="range-body">
+                                <i class="value"><span>10</span></i>
+                                <div class="range"></div>
+                            </section>
+                        </div>
+                    </div>
+                    <form>
+                        <section id="take">
+                            <label>Вы берете <span class="arrow"></span></label>
+                            <strong>10 000</strong>
+                            <div><span class="tenge">T</span></div>
+                        </section>
+                        <section id="term">
+                            <label>До (вк-но) <span class="arrow"></span></label>
+                            <strong>29</strong>
+                            <div>Октября, 2013 <br />Вторник</div>
+                        </section>
+                        <section id="return">
+                            <label>Возвращаете <span class="arrow"></span></label>
+                            <strong>12 160</strong>
+                            <div><span class="tenge">T</span></div>
+                        </section>
+                        <section id="get-money">
+                            <input type="button" value="Получить деньги" class="orange" />
+                        </section>
+                    </form>
+                </div>
+            </aside>
+            <section class="with-aside">
+                <h1>Личный кабинет</h1>
+                <div class="js-tabs">
+                    <div class="js-tabs_head">
+                        <a href="#tab-1" class="active"><span>Моя анкета</span></a>
+                        <a href="#tab-2"><span>Открытый займ</span></a>
+                        <a href="#tab-3"><span>История займов</span></a>
+                    </div>
+                    <div class="js-tabs_body active" id="tab-1">
+                        <form class="lk">
+                            <section class="in-edit">
+                                <h2><i class="title-ico"><img src="img/ico/ico-01.png" alt="" /></i>Контактная информация <a href="#" class="edit-link"><span>Редактировать</span></a></h2>
+                                <div>
+                                    <label>
+                                        <em title="На номер мы вышлем SMS с кодом">?</em>
+                                        Мобильный телефон:
+                                    </label>
+                                    <input type="text" value="" class="phone-number" />
+                                    <input type="button" class="green standart" disabled="disabled" value="Подтвердить номер" />
+                                    <em class="ok"></em>
+                                </div>
+                                <div>
+                                    <label>
+                                        <em title="Номер домашнего телефона с кодом города">?</em>
+                                        Домашний телефон:
+                                    </label>
+                                    <input type="text" value="" class="error" />
+                                    <em class="ok"></em>
+                                    <p class="standart-error">Необходимо указать</p>
+                                </div>
+                                <div>
+                                    <label>
+                                        <em title="Адрес вашего электронного ящика">?</em>
+                                        Электронная почта:
+                                    </label>
+                                    <input type="text" value="" />
+                                    <input type="button" class="green standart" disabled="disabled" value="Подтвердить почту" />
+                                    <em class="ok"></em>
+                                </div>
+                                <div>
+                                    <label>
+                                        <em title="Пояснительный текст">?</em>
+                                        Придумайте секретное слово:
+                                    </label>
+                                    <input type="text" value="" />
+                                    <em class="ok"></em>
+                                </div>
+                                <div class="save-line">
+                                    <input type="button" class="green standart" disabled="disabled" value="Сохранить" />
+                                </div>
+                            </section>
+                            <section class="">
+                                <h2><i class="title-ico"><img src="img/ico/ico-02.png" alt="" /></i>Паспортные данные <a href="#" class="edit-link"><span>Редактировать</span></a></h2>
+                                <div>
+                                    <label>
+                                        <em title="Пояснительный текст">?</em>
+                                        Номер и серия паспорта:
+                                    </label>
+                                    <input type="text" value="MP12352331" disabled="disabled" />
+                                    <em class="ok"></em>
+                                </div>
+                                <div>
+                                    <label>
+                                        <em title="Пояснительный текст">?</em>
+                                        Кем выдан:
+                                    </label>
+                                    <input type="text" value="Центральное РУВД" disabled="disabled" />
+                                    <em class="ok"></em>
+                                </div>
+                                <div>
+                                    <label>
+                                        <em title="Пояснительный текст">?</em>
+                                        Паспорт действителен до:
+                                    </label>
+                                    <input type="text" value="21 сентября 2015" disabled="disabled" />
+                                    <em class="ok"></em>
+                                </div>
+                                <div class="save-line">
+                                    <input type="button" class="green standart" disabled="disabled" value="Сохранить" />
+                                </div>
+                            </section>
+                            <section class="">
+                                <h2><i class="title-ico"><img src="img/ico/ico-03.png" alt="" /></i>Фактический адрес проживания <a href="#" class="edit-link"><span>Редактировать</span></a></h2>
+                                <div>
+                                    <label>
+                                        <em title="Пояснительный текст">?</em>
+                                        Страна:
+                                    </label>
+                                    <input type="text" value="Казахстан" disabled="disabled" />
+                                    <em class="ok"></em>
+                                </div>
+                                <div>
+                                    <label>
+                                        <em title="Пояснительный текст">?</em>
+                                        Город:
+                                    </label>
+                                    <input type="text" value="" disabled="disabled" />
+                                    <em class="ok"></em>
+                                </div>
+                                <div>
+                                    <label>
+                                        <em title="Пояснительный текст">?</em>
+                                        Улица:
+                                    </label>
+                                    <input type="text" value="Интернациональная" disabled="disabled" />
+                                    <em class="ok"></em>
+                                </div>
+                                <div>
+                                    <label>
+                                        <em title="Пояснительный текст">?</em>
+                                        Дом / корпус:
+                                    </label>
+                                    <input type="text" value="45" style="width: 18px;" disabled="disabled" /> / <input type="text" value="2" style="width: 18px;" disabled="disabled" />
+                                    <em class="ok"></em>
+                                </div>
+                                <div class="save-line">
+                                    <input type="button" class="green standart" disabled="disabled" value="Сохранить" />
+                                </div>
+                            </section>
+                            <section class="">
+                                <h2><i class="title-ico"><img src="img/ico/ico-04.png" alt="" /></i>Занятость и доходы <a href="#" class="edit-link"><span>Редактировать</span></a></h2>
+                                <div>
+                                    <label>
+                                        <em title="Пояснительный текст">?</em>
+                                        Тип занятости:
+                                    </label>
+                                    <input type="text" value="Полная занятость" disabled="disabled" />
+                                    <em class="ok"></em>
+                                </div>
+                                <div>
+                                    <label>
+                                        <em title="Пояснительный текст">?</em>
+                                        Наименование работодателя:
+                                    </label>
+                                    <input type="text" value="Частное предприятие" disabled="disabled" />
+                                    <em class="ok"></em>
+                                </div>
+                                <div>
+                                    <label>
+                                        <em title="Пояснительный текст">?</em>
+                                        Должность:
+                                    </label>
+                                    <input type="text" value="Дизайнер ЭВМ" disabled="disabled" />
+                                    <em class="ok"></em>
+                                </div>
+                                <div>
+                                    <label>
+                                        <em title="Пояснительный текст">?</em>
+                                        Ежемесячный доход:
+                                    </label>
+                                    <input type="text" value="300 000" disabled="disabled" style="width: 87px;" /> <span class="tenge">T</span>
+                                    <em class="ok"></em>
+                                </div>
+                                <div>
+                                    <label>
+                                        <em title="Пояснительный текст">?</em>
+                                        Другие кредиты:
+                                    </label>
+                                    <input type="text" value="Нет" disabled="disabled" />
+                                    <em class="ok"></em>
+                                </div>
+                                <div class="save-line">
+                                    <input type="button" class="green standart" disabled="disabled" value="Сохранить" />
+                                </div>
+                            </section>
+                        </form>
+                    </div>
+                    <div class="js-tabs_body" id="tab-2">
+                        <table class="open-credit">
+                            <tbody>
+                                <tr>
+                                    <td>Номер займа</td>
+                                    <td>0000000004121</td>
+                                </tr>
+                                <tr>
+                                    <td>Заявка принята</td>
+                                    <td>18 сентября 2013 в 10:47:18</td>
+                                </tr>
+                                <tr>
+                                    <td>Дата выдачи займа</td>
+                                    <td>18 сентября 2013</td>
+                                </tr>
+                                <tr>
+                                    <td>Сумма займа</td>
+                                    <td>1999.00 <span class="tenge">T</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Продолжительность пользования займом</td>
+                                    <td>7 дней</td>
+                                </tr>
+                                <tr>
+                                    <td>Погашенная сумма</td>
+                                    <td>581.61 <span class="tenge">T</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Статус</td>
+                                    <td class="color-red">Ожидает погашения</td>
+                                </tr>
+                                <tr>
+                                    <td>Дополнительная отсрочка выплат <em title="Пояснительный текст" class="what-this">?</em></td>
+                                    <td>Вы уже используете</td>
+                                </tr>
+                                <tr>
+                                    <td>Сумма для погашения:</td>
+                                    <td><strong>2334.83 <span class="tenge">T</span></strong></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <span class="bigest">Погасить кредит</span>
+                                        <input type="button" value="С банковской карты" class="button orange" />
+                                        <small>или</small>
+                                        <input type="button" value="С Qiwi терминала" class="button orange" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="js-tabs_body" id="tab-3">
+                        <table class="history-credits">
+                            <thead>
+                                <tr>
+                                    <th>Дата</th>
+                                    <th>Сумма кредита</th>
+                                    <th>На срок</th>
+                                    <th>Продление займа</th>
+                                    <th>Оплачено</th>
+                                    <th>Статус</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>24 сентября 2014</td>
+                                    <td>10 000 т</td>
+                                    <td>18 дней</td>
+                                    <td>—</td>
+                                    <td><strong>2 160 <span class="tenge">T</span></strong></td>
+                                    <td class="color-red">12 000 <span class="tenge">T</span> к оплате</td>
+                                </tr>
+                                <tr>
+                                    <td>12 августа 2014</td>
+                                    <td>17 000 т</td>
+                                    <td>18 дней</td>
+                                    <td>12 дней</td>
+                                    <td><strong>14 600 <span class="tenge">T</span></strong></td>
+                                    <td class="color-green"><em class="ok"></em> Оплачено</td>
+                                </tr>
+                                <tr>
+                                    <td>12 августа 2014</td>
+                                    <td>22 000 т</td>
+                                    <td>18 дней</td>
+                                    <td>10 дней</td>
+                                    <td><strong>34 600 <span class="tenge">T</span></strong></td>
+                                    <td class="color-green"><em class="ok"></em> Оплачено</td>
+                                </tr>
+                                <tr>
+                                    <td>24 сентября 2014</td>
+                                    <td>10 000 т</td>
+                                    <td>18 дней</td>
+                                    <td>—</td>
+                                    <td><strong>2 160 <span class="tenge">T</span></strong></td>
+                                    <td class="color-green"><em class="ok"></em> Оплачено</td>
+                                </tr>
+                                <tr>
+                                    <td>12 августа 2014</td>
+                                    <td>17 000 т</td>
+                                    <td>18 дней</td>
+                                    <td>12 дней</td>
+                                    <td><strong>14 600 <span class="tenge">T</span></strong></td>
+                                    <td class="color-green"><em class="ok"></em> Оплачено</td>
+                                </tr>
+                                <tr>
+                                    <td>12 августа 2014</td>
+                                    <td>22 000 т</td>
+                                    <td>18 дней</td>
+                                    <td>10 дней</td>
+                                    <td><strong>34 600 <span class="tenge">T</span></strong></td>
+                                    <td class="color-green"><em class="ok"></em> Оплачено</td>
+                                </tr>
+                                <tr>
+                                    <td>24 сентября 2014</td>
+                                    <td>10 000 т</td>
+                                    <td>18 дней</td>
+                                    <td>—</td>
+                                    <td><strong>2 160 <span class="tenge">T</span></strong></td>
+                                    <td class="color-green"><em class="ok"></em> Оплачено</td>
+                                </tr>
+                                <tr>
+                                    <td>12 августа 2014</td>
+                                    <td>17 000 т</td>
+                                    <td>18 дней</td>
+                                    <td>12 дней</td>
+                                    <td><strong>14 600 <span class="tenge">T</span></strong></td>
+                                    <td class="color-green"><em class="ok"></em> Оплачено</td>
+                                </tr>
+                                <tr>
+                                    <td>12 августа 2014</td>
+                                    <td>22 000 т</td>
+                                    <td>18 дней</td>
+                                    <td>10 дней</td>
+                                    <td><strong>34 600 <span class="tenge">T</span></strong></td>
+                                    <td class="color-green"><em class="ok"></em> Оплачено</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="show-more"><span>Показать еще</span></a>
+                    </div>
+                </div>
+            </section>
+            
+            
+        </div>
+        
+        <div class="clear"></div>
+        <footer>
+            <div class="center">
+                <nav>
+                    <section>
+                        <a href="#">Как это работает</a>
+                        <a href="#">Способ получения денег</a>
+                        <a href="#">Как вернуть деньги</a>
+                        <a href="#">Помощь</a>
+                    </section>
+                    <section>
+                        <a href="#">О проекте</a>
+                        <a href="#">СМИ о нас</a>
+                        <a href="#">Нормативные документы</a>
+                        <a href="#">Правила предоставления займа</a>
+                    </section>
+                </nav>
+                <section class="soclinks">
+                    <p>Мы в соцсетях:</p>
+                    <a href="#" class="vk"></a>
+                    <a href="#" class="tw"></a>
+                    <a href="#" class="fb"></a>
+                </section>
+                <section class="cards">
+                    <p>Работаем с:</p>
+                    <img src="img/visa.png" alt="visa" />
+                    <img src="img/master-card.png" alt="master-card" />
+                    <img src="img/thawte.png" alt="thawte" />
+                </section>
+                <div>
+                    <p>© 2014 <img src="img/logo-footer.png" alt="Кредит24" /></p>
+                    <p>г.Алматы, мкр Баганашыл, Яблоневый сад 11А, 050023</p>
+                    <p class="phone">тел.8-800-000-00-0</p>
+                </div>
+            </div>
+            <div class="company-information js-accordion active">
+                <div class="head-part js-accordion_head active">
+                    <a href="#">
+                        <span class="hide">Свернуть «О компании»</span>
+                        <span class="show">«О компании»</span>
+                    </a>
+                </div>
+                <div class="center js-accordion_body">
+                    <p>В жизни бывают ситуации, когда срочно нужны деньги. Можно попытаться взять в долг у друзей или кредит наличными в банке, но не всегда получить одобрение.
+                        Компания VIVUS предлагает Вам мгновенную помощь и выдает займы населению без справок и поручителей.
+                        Vivus.ru - это отличная альтернатива банковским кредитам наличными. Мы предлагаем Вам займы через интернет, доступные в любое время дня и ночи. Чтобы получить онлайн займ, у вас уйдет минимум времени, а средства будут переведены сразу на Ваш счет в банке. Все, что Вам нужно – это заполнить форму на получение займа на данном сайте, где Вы укажете свои банковские реквизиты, и дождаться звонка менеджера. Если Ваша заявка будет одобрена – Вы получите сумму займа на указанный банковский счет.
+                    </p>
+                    <p>
+                        <strong>Преимущества получения займа</strong>
+                        Лояльность. Возьмите Ваш первый заём на 30 дней и не платите комиссию!
+                        Оперативность. Если заявка заполнена правильно, процедура займет не больше времени, чем получение экспресс-займа в офисе крупного ритейлера в Москве.
+                        Простота. Процесс оформления займа максимально прост: Вам не нужно посещать офис или встречаться с агентом, одобрение заявки происходит на нашем сайте и по телефону.
+                        Безопасность. Мы не требуем копии документов и справок, решение о выдаче займа принимается на основании заполненных Вами данных в анкете.
+                        Клиентоориентированность. Выплату займа возможно продлить - Вам потребуется только указать это в личном кабинете на сайте и внести оплату за продление займа.
+                        Доступность. Вы можете получить заём без посещения офиса в любом городе России.
+                        Универсальность. Погасить заём Вы сможете несколькими способами на выбор: банковский перевод через интернет-банк, с помощью электронных терминалов оплаты Киберплат, ИОН, Билайн или в филиалах банков РФ.
+                    </p>
+                    <p>
+                        <strong>Гарантии</strong>
+                        Заём VIVUS это сотрудничество с европейской компанией, в основе бизнеса которой лежат мировые стандарты качества работы с клиентами.<br />
+                        Заём VIVUS – это быстро, надежно и безопасно. На сегодняшний день наша компания выдала уже более 3 500 000 займов по всему миру. Если Вам нужны деньги – обратитесь к нам. Мгновенные займы в Москве и в любом другом городе России с компанией VIVUS - это просто!<br />
+                        1. ЗАО "4финанс", фактический адрес: 115201, г.Москва, ул. Котляковская, д. 3, стр. 13, офис 402<br />
+                        2. Пример расчёта годовой процентной ставки: Пример 1: при сумме первого микрозайма 5000 руб., который выдан на срок 30 дней при процентной ставке 0% годовых, сумма, подлежащая выплате, составит 5000 рублей. Пример 2: при сумме микрозайма 5000 руб. (второй и последующий микрозайм), который выдан на 10 дней при процентной ставке - 18% в месяц, сумма, подлежащая выплате, составит 5900 рублей.<br />
+                        3. В случае невыполнения обязательств может быть начат процесс взыскания долга или право взыскания может быть передано третьим лицам, что негативно отразится на кредитной истории и, возможно, на кредитном рейтинге заёмщика, что, в свою очередь, может стать причиной отказа в предоставлении услуг. В случае истечения срока возврата суммы микрозайма или непродления Клиентом срока предоставления микрозайма (в день окончания срока предоставления микрозайма) со дня, следующего за днем окончания срока предоставления микрозайма, Клиенту начисляется штраф в размере 1,5% от суммы микрозайма за каждый день просрочки возврата суммы микрозайма.<br />
+                        4. Заёмщик вправе продлить срок займа, оплатив комиссию за продление, размер который указан в предложении о продлении займа в личном кабинете заёмщика.<br />
+                    </p>
+                    
+                </div>
+            </div>
+        </footer>
+        
+        <div class="mask_popup"></div>
+        <div class="popup" id="video">
+            <article>
+                <a class="close">Закрыть</a>
+                <iframe></iframe>
+            </article>
+            
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,14 @@
+.standart-form .button.orange.disabled {background: #d4d4d4;}
+input[type="button"].green, .button.green {background: #79cb3d;}
+input[type="button"].green:hover, .button.green:hover {background: #6dbb34;}
+input[type="button"].green[disabled] {background-color: #fbfbfb;}
+
+
+
+
+
+
+
+
+
+
