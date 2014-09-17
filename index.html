@@ -307,24 +307,35 @@
             </article>
             
         </div>
-        <div class="popup" id="enter">
+        <div class="popup enter_version-2" id="enter">
             <article>
                 <a class="close-popup"></a>
                 <h2>Вход в личный кабинет</h2>
-                <form class="personalization-form enter">
-                    <div>
-                        <label class="label">Мобильный телефон <em title="Пояснительный текст" class="what-this">?</em></label>
-                        <input type="text" value="" class="mobile-phone" />
+                <div class="enter_wrapper">
+                    <div class="two-column">
+                        <div>
+                            <p class="enter-type"><span></span>Зарегестрированный пользователь</p>
+                            <form class="personalization-form enter">
+                                <div>
+                                    <label class="label">Мобильный телефон <em title="Пояснительный текст" class="what-this">?</em></label>
+                                    <input type="text" value="" class="mobile-phone" />
+                                </div>
+                                <div>
+                                    <label class="label">Пароль</label>
+                                    <input type="password" value="" />
+                                    <a href="#" class="popup-change" name="repair-pass">Забыли пароль?</a>
+                                </div>
+                                <div>
+                                    <input type="button" value="Войти" class="button orange" />
+                                </div>
+                            </form>
+                        </div><!--
+                        --><div>
+                            <p class="enter-type"><span></span>Впервые на сайте</p>
+                            <p>Чтобы зарегестрироваться необходимо заполнить <a href="#">заявку на займ</a></p>
+                        </div>
                     </div>
-                    <div>
-                        <label class="label">Пароль</label>
-                        <input type="password" value="" />
-                        <a href="#" class="popup-change" name="repair-pass">Забыли пароль?</a>
-                    </div>
-                    <div>
-                        <input type="button" value="Войти" class="button orange" />
-                    </div>
-                </form>
+                </div>
             </article>
         </div>
         <div class="popup" id="repair-pass">

@@ -810,3 +810,29 @@ body.freeze{overflow-y: scroll;}
 #for-money article .button{font: normal 18px/18px 'Play'; width: auto; padding: 8px 20px; height: 18px; margin: 10px 20px 5px 0; box-shadow: none; border: none;}
 #for-money article .button:active{margin: 12px 20px 3px 0;}
 /* Index - popup take money END */
+
+/* Index - popup enter. Version 2 */
+.enter_version-2.popup#enter article {width: 555px;}
+.enter_version-2.popup#enter h2 {margin: 10px 0 20px;}
+.enter_version-2 .personalization-form{margin-top: 22px;}
+.enter_version-2 .personalization-form > div:last-child {margin: 16px 0 0;}
+.enter_wrapper{padding: 0 40px 15px;}
+.two-column{display: table; width: 100%; text-align: left;}
+.two-column > div{display: table-cell; width: 50%;}
+.two-column > div + div{border-left: 1px solid #d4d8e0; margin-left: -1px;}
+.enter_version-2 .two-column > div{width: 54%;}
+.enter_version-2 .two-column > div:first-child{width: 45%;}
+.enter_version-2 .two-column > div > *{max-width: 205px; margin-left: 50px;}
+.enter_version-2 .two-column > div:first-child > *{max-width: 180px; margin-left: 0px;}
+.enter_version-2 p{font-size: 16px; line-height: 20px; color: #767382; margin: 10px 0;}
+.enter_version-2 p.enter-type{font-weight: bold; font-size: 16px; color: #697382; margin-top: 0;}
+.enter_version-2 p.enter-type > span:first-child{display: block; width: 7px; height: 12px; background: url("../img/arrow.png") no-repeat center; float: left; margin: 0 0 0 -20px;}
+.enter_version-2 a{color: #80c41c; text-decoration: underline;}
+.enter_version-2 a:hover{text-decoration: none;}
+.enter_version-2 .personalization-form input[type="button"].orange {margin: 10px 0 2px;}
+.enter_version-2 .personalization-form input[type="button"].orange:not([disabled="disabled"]):active {margin: 12px 0 0;}
+/* Index - popup enter. Version 2 END */
+
+
+
+
