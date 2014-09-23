@@ -804,11 +804,16 @@ body.freeze{overflow-y: scroll;}
 /* Thank's pages END */
 
 /* Index - popup take money */
-#for-money article{background: #f4f4f7; padding: 15px 30px 15px; width: 630px; text-align: left;}
+#for-money article{background: #f4f4f7; padding: 15px 30px 15px 40px;; width: 720px; text-align: left;}
 #for-money article p{font-size: 16px; line-height: 24px; color: #697382; margin: 15px 0;}
 #for-money article p.title{font: normal 44px/40px 'Play'; margin: 13px 0 18px;}
 #for-money article .button{font: normal 18px/18px 'Play'; width: auto; padding: 8px 20px; height: 18px; margin: 10px 20px 5px 0; box-shadow: none; border: none;}
 #for-money article .button:active{margin: 12px 20px 3px 0;}
+#for-money article .for-money_step{padding-left: 160px; color: #697382; font-size: 14px; line-height: 20px; margin: 40px 0 45px; min-height: 94px;}
+#for-money article .for-money_step.action{margin: -20px 0 18px; min-height: 0;}
+#for-money article .step-illustration{display: block; float: left; width: 115px; margin-left: -160px; text-align: center;}
+#for-money article .for-money_step > p{font: normal 24px/16px 'Play'; margin: 15px 0;}
+#for-money article .for-money_step > p > i:first-child{display: inline-block; vertical-align: middle; color: #fff; background: #83d03c; width: 26px; height: 26px; text-align: center; border-radius: 50%; font: normal 21px/26px 'Play'; margin-right: 15px;}
 /* Index - popup take money END */
 
 /* Index - popup enter. Version 2 */
