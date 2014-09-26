@@ -838,6 +838,6 @@ body.freeze{overflow-y: scroll;}
 .enter_version-2 .personalization-form input[type="button"].orange:not([disabled="disabled"]):active {margin: 12px 0 0;}
 /* Index - popup enter. Version 2 END */
 
-
-
+.scan-document{padding:10px 0 10px 140px; font: normal 20px/22px 'Play'; margin: -15px 0 40px; color: #697382}
+.scan-document .scan-document_illustration{display: block; float: left; margin-left: -140px;}
 
